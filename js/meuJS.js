@@ -25,7 +25,7 @@ let tempo = 60; // valor inicial
     tempo--;
     document.getElementById("regressivo").textContent = tempo;
 
-    if (tempo <= 0) {
+    if (tempo <= 60) {
       clearInterval(contador);
       document.getElementById("regressivo").textContent = "0";
       document.getElementById("minhaSection").style.display = "block";
