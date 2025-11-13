@@ -19,13 +19,13 @@
   });
 });
 
-let tempo = 0; // valor inicial
+let tempo = 60; // valor inicial
 
   const contador = setInterval(() => {
     tempo--;
     document.getElementById("regressivo").textContent = tempo;
 
-    if (tempo <= 60) {
+    if (tempo <= 0) {
       clearInterval(contador);
       document.getElementById("regressivo").textContent = "0";
       document.getElementById("minhaSection").style.display = "block";
